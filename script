@@ -8,6 +8,12 @@ MoneyTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+SpinTab = Window:MakeTab({
+	Name = "Money Tab",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 ---Window
 
 
