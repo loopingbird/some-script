@@ -55,6 +55,22 @@ SpinTab:AddTextbox({
 game:GetService("ReplicatedStorage").Remotes.AddRewardEvent:FireServer(unpack(args))
 	end	  
 })
+
+
+MoneyTab:AddTextbox({
+	Name = "Chosse your cash",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		local args = {
+    [1] = "Cash",
+    [2] = tonumber(Value)
+}
+
+game:GetService("ReplicatedStorage").Remotes.AddValueEvent:FireServer(unpack(args))
+	end	  
+})
+
 ---Textbox
 
 OrionLib:Init()
