@@ -160,6 +160,20 @@ MoneyTab:AddTextbox({
 game:GetService("ReplicatedStorage").Remotes.SelectCarEvent:FireServer(unpack(args))
 	end	  
 })
+
+
+SpinTab:AddTextbox({
+	Name = "Gems",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		local args = {
+    [1] = tonumber(Value)
+}
+
+game:GetService("ReplicatedStorage").Remotes.GemEvent:FireServer(unpack(args))
+	end	  
+})
 ---Textbox
 
 OrionLib:Init()
