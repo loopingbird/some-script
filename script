@@ -10,7 +10,7 @@ MoneyTab = Window:MakeTab({
 })
 
 SpinTab = Window:MakeTab({
-	Name = "Money Tab",
+	Name = "Spins",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -19,7 +19,7 @@ SpinTab = Window:MakeTab({
 
 ---Tab
 local Section = SpinTab:AddSection({
-	Name = "Spin"
+	Name = "Choose how much spins you want"
 })
 ---Tab 
 
@@ -43,7 +43,7 @@ MoneyTab:AddButton({
 
 ---Textbox
 SpinTab:AddTextbox({
-	Name = "spins",
+	Name = "Chosse your spins",
 	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
