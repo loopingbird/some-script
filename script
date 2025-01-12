@@ -158,7 +158,8 @@ MoneyTab:AddTextbox({
 }
 
 game:GetService("ReplicatedStorage").Remotes.SelectCarEvent:FireServer(unpack(args))
-
+	end	  
+})
 ---Textbox
 
 OrionLib:Init()
