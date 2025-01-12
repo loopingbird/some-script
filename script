@@ -38,7 +38,7 @@ MoneyTab:AddButton({
 ---Textbox
 MoneyTab:AddTextbox({
 	Name = "spins",
-	Default = "",
+	Default = "How much Gems",
 	TextDisappear = true,
 	Callback = function(2)
 		local args = {
