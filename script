@@ -21,6 +21,10 @@ SpinTab = Window:MakeTab({
 local Section = SpinTab:AddSection({
 	Name = "Choose how much spins you want"
 })
+
+local Section = MoneyTab:AddSection({
+	Name = "Max your spawning levels"
+})
 ---Tab 
 
 
@@ -34,11 +38,83 @@ OrionLib:MakeNotification({
 
 ---Button
 MoneyTab:AddButton({
-	Name = "nigger!",
+	Name = "Spawn Rate",
 	Callback = function()
-      		print("button pressed")
+      		local args = {
+    [1] = "SpawnRateLevel",
+    [2] = 30,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
   	end    
 })
+
+MoneyTab:AddButton({
+	Name = "Max Vehicles",
+	Callback = function()
+      		local args = {
+    [1] = "MaxBlocksLevel",
+    [2] = 30,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
+  	end    
+})
+
+MoneyTab:AddButton({
+	Name = "Spawn Tier",
+	Callback = function()
+      		local args = {
+    [1] = "SpawnTierLevel",
+    [2] = 95,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
+  	end    
+})
+
+MoneyTab:AddButton({
+	Name = "Auto Merge",
+	Callback = function()
+      		local args = {
+    [1] = "AutoMergeLevel",
+    [2] = 30,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
+  	end    
+})
+
+MoneyTab:AddButton({
+	Name = "Lucky Merge",
+	Callback = function()
+      		local args = {
+    [1] = "LuckyMergeLevel",
+    [2] = 30,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
+  	end    
+})
+
+MoneyTab:AddButton({
+	Name = "Cash Rate",
+	Callback = function()
+      		local args = {
+    [1] = "CashRateLevel",
+    [2] = 30,
+    [3] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.UpgradeEvent:FireServer(unpack(args))
+  	end    
+})
+
 ---Button
 
 ---Textbox
