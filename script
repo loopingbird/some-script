@@ -40,7 +40,7 @@ MoneyTab:AddTextbox({
 	Name = "spins",
 	Default = "",
 	TextDisappear = true,
-	Callback = function = Value
+	Callback = function(Value)
 		local args = {
     [1] = "Spins",
     [2] = Value
