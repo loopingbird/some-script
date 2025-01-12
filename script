@@ -38,12 +38,12 @@ MoneyTab:AddButton({
 ---Textbox
 MoneyTab:AddTextbox({
 	Name = "spins",
-	Default = ,
+	Default = "",
 	TextDisappear = true,
-	Callback = function(Value)
+	Callback = function(Number)
 		local args = {
     [1] = "Spins",
-    [2] = (Value)
+    [2] = (Number)
 }
 
 game:GetService("ReplicatedStorage").Remotes.AddRewardEvent:FireServer(unpack(args))
