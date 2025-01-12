@@ -12,8 +12,8 @@ MoneyTab = Window:MakeTab({
 
 
 ---Tab
-local Section = MoneyTab:AddSection({
-	Name = "Section"
+local Section = SpinTab:AddSection({
+	Name = "Spin"
 })
 ---Tab 
 
@@ -36,7 +36,7 @@ MoneyTab:AddButton({
 ---Button
 
 ---Textbox
-MoneyTab:AddTextbox({
+SpinTab:AddTextbox({
 	Name = "spins",
 	Default = "",
 	TextDisappear = true,
