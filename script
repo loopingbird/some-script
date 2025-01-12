@@ -147,6 +147,18 @@ game:GetService("ReplicatedStorage").Remotes.AddValueEvent:FireServer(unpack(arg
 	end	  
 })
 
+
+MoneyTab:AddTextbox({
+	Name = "Pick your vehicles 1-100",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		local args = {
+    [1] = 41
+}
+
+game:GetService("ReplicatedStorage").Remotes.SelectCarEvent:FireServer(unpack(args))
+
 ---Textbox
 
 OrionLib:Init()
