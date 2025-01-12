@@ -154,7 +154,7 @@ MoneyTab:AddTextbox({
 	TextDisappear = true,
 	Callback = function(Value)
 		local args = {
-    [1] = 41
+    [1] = tonumber(Value)
 }
 
 game:GetService("ReplicatedStorage").Remotes.SelectCarEvent:FireServer(unpack(args))
