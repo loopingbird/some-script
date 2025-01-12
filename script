@@ -40,10 +40,10 @@ MoneyTab:AddTextbox({
 	Name = "spins",
 	Default = "",
 	TextDisappear = true,
-	Callback = function "Number"
+	Callback = function(remove_quotes("Value)
 		local args = {
     [1] = "Spins",
-    [2] = "Number"
+    [2] = (Value)
 }
 
 game:GetService("ReplicatedStorage").Remotes.AddRewardEvent:FireServer(unpack(args))
