@@ -51,6 +51,4 @@ game:GetService("ReplicatedStorage").Remotes.AddRewardEvent:FireServer(unpack(ar
 })
 ---Textbox
 
-
-
 OrionLib:Init()
