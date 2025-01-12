@@ -9,11 +9,7 @@ local Tab = Window:MakeTab({
 })
 ---Window
 
----Tab
-local Section = Tab:AddSection({
-	Name = "Section"
-})
----Tab 
+
 
 
 OrionLib:MakeNotification({
@@ -25,7 +21,7 @@ OrionLib:MakeNotification({
 
 
 ---Button
-Tab:AddButton({
+MoneyTab:AddButton({
 	Name = "Button!",
 	Callback = function()
       		print("button pressed")
@@ -34,7 +30,7 @@ Tab:AddButton({
 ---Button
 
 ---Textbox
-Tab:AddTextbox({
+MoneyTab:AddTextbox({
 	Name = "Textbox",
 	Default = "default box input",
 	TextDisappear = true,
