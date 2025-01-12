@@ -43,7 +43,7 @@ MoneyTab:AddTextbox({
 	Callback = function(Value)
 		local args = {
     [1] = "Spins",
-    [2] = (Value)
+    [2] = tonumber(Value)
 }
 
 game:GetService("ReplicatedStorage").Remotes.AddRewardEvent:FireServer(unpack(args))
